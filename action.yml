@@ -1,0 +1,30 @@
+name: 'Simple Action'
+description: 'A very simple GitHub action implementing the command design pattern'
+inputs:
+  command:
+    description: 'Command to run'
+    required: true
+
+  issue-number:
+    description: 'Issue Number'
+    required: true
+
+  token:
+    description: 'Access token'
+    required: true
+
+  org:
+    description: 'Repository Owner (User or Organization)'
+    required: false
+
+  repo:
+    description: 'Repository name'
+    required: false
+
+outputs:
+  result:
+    description: 'Result of the command executed'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
