@@ -1,0 +1,27 @@
+{
+  "name": "command-action",
+  "version": "0.1.0",
+  "description": "GitHub Action that implements the command design pattern",
+  "main": "cli.js",
+  "scripts": {
+    "build": "ncc build src/cli.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "github-action"
+  ],
+  "author": "Link-",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "commander": "^7.2.0",
+    "ncc": "^0.3.6"
+  }
+}
